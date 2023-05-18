@@ -1,13 +1,89 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: lightblue;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 50px auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.heading {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(182, 66, 157);
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-container {
+  position: absolute;
+  margin: 100px auto;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid rgb(182, 66, 157);
+  width: 150px;
+  outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+}
+
+.input::placeholder {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: medium;
+}
+
+.add-button {
+  background-color: rgb(182, 66, 157);
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  font-size: larger;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.items {
+  position: absolute;
+  top: 135px;
+  left: -12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.delete-button-svg {
+  width: 15px;
+  margin-right: 10px;
+
+}
+
+.delete-button {
+  width: 25px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.checkbox{
+  position: absolute;
+  right: -82px;
 }
